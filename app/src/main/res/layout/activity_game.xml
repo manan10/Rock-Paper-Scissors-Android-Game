@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".game"
+    android:orientation="vertical"
+    android:background="@mipmap/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40sp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:text="You"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:id="@+id/player"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:text="Computer"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:id="@+id/player_score"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:id="@+id/computer_score"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25sp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180sp"
+            android:id="@+id/player_image"
+            android:src="@mipmap/rock"
+            android:layout_weight="50"
+            android:background="@null"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180sp"
+            android:id="@+id/computer_image"
+            android:src="@mipmap/rock"
+            android:layout_weight="50"
+            android:alpha="127"
+            android:background="@null"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Your Move"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:layout_marginTop="40sp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:id="@+id/stone"
+            android:src="@mipmap/rock"
+            android:layout_weight="50"
+            />
+
+        <ImageView
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:id="@+id/paper"
+            android:src="@mipmap/paper"
+            android:layout_weight="50"
+            android:alpha="127"
+            />
+
+        <ImageView
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:id="@+id/scissors"
+            android:src="@mipmap/scissors"
+            android:layout_weight="50"
+            android:alpha="127"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FINISH"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="20sp"
+        android:id="@+id/finish"
+        android:background="#ff9900"
+        android:layout_marginRight="100sp"
+        android:layout_marginLeft="100sp"/>
+
+
+</LinearLayout>
